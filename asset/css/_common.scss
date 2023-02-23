@@ -1,0 +1,47 @@
+@use './color' as color;
+@use './mixin' as mixin;
+/****************************************
+
+common styles
+
+****************************************/
+html {
+    font-size: 62.5%;
+}
+body {
+    color: color.$textColor;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    font-family: 'NotoSansJP', sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+img {
+    max-width: 100%;
+    vertical-align: baseline;
+}
+a {
+    color: color.$textColor;
+    text-decoration: none;
+    transition: opacity 0.3s;
+    @include mixin.mq(pc) {
+        &:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+    }
+}
+
+
+/* 共通スタイル */
+
+
+/* アニメーションスタイル */
+
+
+/* ヘッダースタイル */
+
+
+/* フッタースタイル */
+
+
+/* ページスタイル */
